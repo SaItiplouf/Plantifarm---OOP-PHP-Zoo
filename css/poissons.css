@@ -1,0 +1,163 @@
+body {
+  background-image: url("../img/pechebg.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.moto {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 590px;
+  left: 1300px;
+  opacity: 1;
+  display: inline-block;
+  z-index: 1;
+}
+
+.panneau-container {
+  position: absolute;
+  width: 30vh;
+  left: 105vh;
+  height: 15vh;
+  top: 50vh;
+}
+
+.panneau {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30vh;
+}
+
+.textpanneau {
+  position: absolute;
+  left: 10%;
+  top: -6%;
+  font-size: 2vh;
+  color: rgb(0, 0, 0);
+}
+
+/* displaying les moutons  */
+
+.container {
+  width: 75vh;
+  overflow: hidden;
+  /* ou overflow: auto; */
+  position: absolute;
+  top: 45vh;
+  height: 40vh;
+  left: 10vh;
+  z-index: 1;
+  padding-left: 0vh;
+  padding-top: 4vh;
+}
+
+.animal {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20%;
+  margin: 10px;
+  align-items: center;
+  /* left: 0;
+  top: 0; */
+}
+
+
+
+/* container2=requin */
+.container2 {
+  width: 0%;
+  overflow: hidden;
+  position: absolute;
+  top: 60vh;
+  height: 50vh;
+  z-index: 2;
+}
+
+
+.animal img {
+  width: 6vh;
+}
+
+.requin {
+  position: absolute;
+  display: flex;
+  right: 53vh;
+  top: 21vh;
+  flex-direction: column;
+  justify-content: center;
+  width: 25%;
+  animation: move 2s ease-in-out infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(20px, 0);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.requin img {
+  width: 100%;
+}
+
+.clearfix {
+  clear: both;
+}
+
+/* fin display  */
+
+.carte {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  padding-left: 0vh;
+  padding-top: 0.4vh;
+  position: relative;
+  left: -1vh;
+}
+
+.hidden {
+  display: none;
+}
+
+.cartecontainer {
+  overflow: hidden;
+  max-height: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 1.75rem;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9));
+  background-image: url('../img/carte.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Uncial Antiqua', 'Old English Text MT', cursive;
+  font-size: 0.9vh;
+  line-height: 1rem;
+  text-align: left;
+  overflow: hidden;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 1rem;
+  position: absolute;
+  top: -10em;
+  width: 32vh;
+  height: 100vh;
+  z-index: 6;
+}
+
+.poisson {
+  z-index: 1;
+}

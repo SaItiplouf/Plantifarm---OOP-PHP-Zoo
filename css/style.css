@@ -1,0 +1,169 @@
+body {
+    background-image: url("../img/bg.png");
+    overflow: hidden;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+h1 {
+    align-items: right;
+    font-size: 8vh;
+}
+
+
+.tracteur {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 49.9vh;
+    left: 81vh;
+    opacity: 1;
+    z-index: 5;
+}
+
+.iframetv {
+    border: none;
+    position: relative;
+    bottom: 20vh;
+    width: 100vh;
+    height: 100vh;
+    left: 0vh;
+
+}
+
+.iphoneoff {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    right: 0vh;
+    top: 85vh;
+    z-index: 2;
+}
+
+.iphone {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    right: 0vh;
+    top: 85vh;
+    z-index: 2;
+}
+
+@media (max-height: 430px) {
+    body {
+        background-image: url("../img/bg.png");
+        overflow: hidden;
+        background-repeat: no-repeat;
+    }
+
+    h1 {
+        align-items: right;
+        font-size: 8vh;
+    }
+
+    .tracteur {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 54vh;
+        left: 88vh;
+        opacity: 1;
+        z-index: 1;
+        width: 57.46vh;
+    }
+
+    .iframetv {
+        border: none;
+        position: relative;
+        bottom: 20vh;
+        width: 100vh;
+        height: 100vh;
+        left: 0vh;
+
+    }
+
+    .iphoneoff {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        right: -1vh;
+        top: 86vh;
+        width: 50vh;
+        z-index: 2;
+    }
+
+    .iphone {
+        display: none;
+        opacity: 0;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        right: 0vh;
+        top: 85vh;
+        z-index: 2;
+    }
+}
+
+@media (max-height: 400px) {
+    body {
+        background-image: url("../img/bg.png");
+        overflow: hidden;
+        background-repeat: no-repeat;
+    }
+
+    h1 {
+        align-items: right;
+        font-size: 8vh;
+    }
+
+    .tracteur {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 43vh;
+        left: 73vh;
+        opacity: 1;
+        z-index: 1;
+        width: 57.46vh;
+    }
+
+    .iframetv {
+        border: none;
+        position: relative;
+        bottom: 20vh;
+        width: 100vh;
+        height: 100vh;
+        left: 0vh;
+
+    }
+
+    .iphoneoff {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        right: -1vh;
+        top: 86vh;
+        width: 50vh;
+        z-index: 2;
+    }
+
+    .iphone {
+        display: none;
+        opacity: 0;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        right: 0vh;
+        top: 85vh;
+        z-index: 2;
+    }
+}

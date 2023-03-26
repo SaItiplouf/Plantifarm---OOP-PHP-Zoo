@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text:400,500");
+
+html {
+    zoom: 1;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-family: 'Crimson Text', serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+#app-parent {
+    width: 47.47vh;
+    height: 72.24vh;
+    zoom: reset;
+}
+
+\::selection {
+    color: white;
+    background: #7f6d2e;
+}
+
+#app {
+    position: relative;
+    left: 12vh;
+    color: #6d6d6d;
+    background: #2b2b2b;
+    padding: 0;
+    border-radius: 1.5vh;
+    z-index: 3;
+    width: 47.47vh;
+    top: 12vh;
+    height: 69.24vh;
+    box-shadow: -5px 5px 40px 5px rgba(0, 0, 0, 0.4);
+
+}
+
+@media (max-width: 1000px) {
+    .iphonecontainer {
+        right: 10vh;
+    }
+}
+
+.iphonecontainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    padding-left: 25vh;
+    padding-right: 25vh;
+}
+
+.iphoneon {
+    position: absolute;
+    padding-bottom: 20vh;
+    top: -2vh;
+    width: 72vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+
+}
+
+
+
+
+@media (max-height: 430px) {
+    #app {
+        width: 200px;
+        height: 300px;
+        top: 8vh;
+    }
+}
+
+@media (max-height: 400px) {
+    #app {
+        width: 175px;
+        height: 275px;
+    }
+}
+
+.heading {
+    transition: 0.3s;
+    color: #c5cdd8;
+    font-weight: 500;
+    font-size: 40px;
+    margin: 20px 0px 10px 30px;
+}
+
+@media (max-width: 420px) {
+    .heading {
+        font-size: 35px;
+        margin: 15px 0px 10px 25px;
+    }
+}
+
+.fa-filter {
+    position: absolute;
+    right: 25px;
+    top: 33px;
+    font-size: 22px;
+    transition: 0.3s;
+    color: rgba(165, 141, 59, 0.8);
+}
+
+@media (max-width: 420px) {
+    .fa-filter {
+        right: 20px;
+        top: 27px;
+        font-size: 20px;
+    }
+}
+
+.fa-filter:hover {
+    cursor: POINTER;
+}
+
+.fa-filter:active {
+    transform: scale(0.9);
+    opacity: 0.8;
+}
+
+#hr {
+    width: 80%;
+    height: 0.5vh;
+    border-radius: 1vh;
+    border: none;
+    background: #a58d3b;
+}
+
+@media (max-width: 420px) {
+    #hr {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-height: 430px) {
+    #hr {
+        margin-bottom: 5px;
+    }
+}
+
+#navigation {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #1d1d1d;
+    height: 5.67vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 420px) {
+    #navigation {
+        height: 45px;
+    }
+}
+
+#navigation>i {
+    color: #a58d3b;
+    font-size: 25px;
+    margin: 0 13% 0 13%;
+    transition: 0.3s;
+}
+
+@media (max-width: 420px) {
+    #navigation>i {
+        font-size: 20px;
+    }
+}
+
+#navigation>i:hover {
+    cursor: POINTER;
+}
+
+#navigation>i:active {
+    transform: scale(0.9);
+    opacity: 0.7;
+}
+
+.fa-user {
+    width: 0.28vh;
+}
+
+.home-icon {
+    background: #1a1a1a00;
+    border-radius: 6vh;
+    padding: 25px;
+}
+
+@media (max-width: 420px) {
+    .home-icon {
+        padding: 20px;
+    }
+}
+
+.home-icon>i {
+    color: #a58d3b;
+    transition: 0.3s;
+    font-size: 30px;
+    margin: 0 0 10px 0;
+}
+
+@media (max-width: 420px) {
+    .home-icon>i {
+        font-size: 25px;
+    }
+}
+
+.home-icon>i:hover {
+    cursor: POINTER;
+}
+
+.home-icon>i:active {
+    transform: scale(0.9);
+    opacity: 0.7;
+}
+
+.item-list {
+    display: flex;
+    justify-content: center;
+    height: 72%;
+    overflow: auto;
+}
+
+.item-list::-webkit-scrollbar {
+    width: 0em;
+    height: 0em;
+}
+
+
+.item-list>ul {
+    list-style: none;
+    padding: 0 0 0 0;
+}
+
+.item {
+    background: #233652;
+    margin: 0.5vh;
+    width: 20vh;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1vh;
+    transition: 0.1s;
+    box-shadow: -1px 2px 5px 0 rgba(0, 0, 0, 0.4);
+}
+
+.item:hover {
+    cursor: POINTER;
+}
+
+.item:active {
+    transform: scale(0.95);
+    opacity: 0.6;
+}
+
+
+@media (max-height: 430px) {
+    .item {
+        width: 85px;
+        height: 85px;
+        box-shadow: 0px 1px 5px 0 rgba(0, 0, 0, 0.3);
+    }
+}
+
+.item-row {
+    display: flex;
+}
+
+.item-row:last-of-type {
+    margin-bottom: 3vh;
+}
+
+.item-image {
+    padding-top: 0.5vh;
+    height: 20vh;
+    border-radius: 1vh;
+    filter: opacity(0.9);
+}
+
+.fabrice {
+    color: white
+}

@@ -1,0 +1,111 @@
+body {
+    background-image: url("../img/renard.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.moto {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 600px;
+    left: 1118px;
+    opacity: 1;
+    display: inline-block;
+    z-index: 5;
+}
+
+.panneau-container {
+    position: absolute;
+    width: 25vh;
+    height: 15vh;
+    top: 63vh;
+    left: 160vh;
+}
+
+.renard {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    padding-top: 5vh;
+}
+
+.panneau {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25vh;
+}
+
+.textpanneau {
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    font-size: 1.8vh;
+    color: rgb(0, 0, 0);
+    margin-block-start: 0rem;
+    margin-block-end: 0rem;
+    line-height: 0.6rem;
+}
+
+.container {
+    width: 65%;
+    overflow: hidden;
+    z-index: 1;
+    top: 70vh;
+    height: 40vh;
+    left: 10vh;
+    padding-left: 0vh;
+    padding-top: 8vh;
+    position: absolute;
+}
+
+.animal {
+    position: relative;
+    margin-left: 4vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 14%;
+    margin: 10px;
+    float: left;
+}
+
+.carte {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.hidden {
+    display: none;
+}
+
+.animal img {
+    width: 100%;
+}
+
+.cartecontainer {
+    overflow: hidden;
+    max-height: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 1rem;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9));
+    background-image: url('../img/carte.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Uncial Antiqua', 'Old English Text MT', cursive;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-align: left;
+    overflow: hidden;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 1rem;
+    position: absolute;
+    top: -2em;
+
+}

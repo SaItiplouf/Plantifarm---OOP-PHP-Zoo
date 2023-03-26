@@ -1,0 +1,113 @@
+body {
+  background-image: url("../img/poulebg.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.moto {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 657px;
+  left: 10px;
+  opacity: 1;
+  display: inline-block;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(1);
+  z-index: 5;
+}
+
+.panneau-container {
+  position: absolute;
+  width: 25vh;
+  height: 15vh;
+  top: 67vh;
+  left: 142vh;
+}
+
+.reverse {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.panneau {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25vh;
+}
+
+.textpanneau {
+  position: absolute;
+  left: 10%;
+  top: 5%;
+  font-size: 1.8vh;
+  color: rgb(0, 0, 0);
+  margin-block-start: 0rem;
+  margin-block-end: 0rem;
+  line-height: 0.6rem;
+}
+
+.container {
+  width: 100%;
+  overflow: hidden;
+  padding-left: 38vh;
+  padding-top: 28vh;
+  position: absolute;
+  top: 45vh;
+  height: 40vh;
+  left: 10vh;
+}
+
+.animal {
+  position: relative;
+  margin-left: 4vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 9%;
+  margin: 10px;
+  float: left;
+  padding-top: 2%;
+
+}
+
+.carte {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+.hidden {
+  display: none;
+}
+
+.animal img {
+  width: 60%;
+}
+
+.cartecontainer {
+  overflow: hidden;
+  max-height: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 1rem;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9));
+  background-image: url('../img/carte.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Uncial Antiqua', 'Old English Text MT', cursive;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  text-align: left;
+  overflow: hidden;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 1rem;
+  position: absolute;
+  top: -6em;
+
+}
