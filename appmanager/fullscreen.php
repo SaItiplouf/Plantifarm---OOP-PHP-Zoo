@@ -62,11 +62,11 @@
                         <?php
 
                         if ($mouton->getRace() == "Mouton") {
-                            echo '<img class="mouton" src="../img/objets/moutons.png">';
+                            echo '<img class="mouton" src="../img/objets/moutons' . $mouton->getImgid() . '.png">';
                         } else if ($mouton->getRace() == "Poulet") {
-                            echo '<img class="mouton" src="../img/objets/poulet.png">';
+                            echo '<img class="mouton" src="../img/objets/poulet' . $mouton->getImgid() . '.png">';
                         } else if ($mouton->getRace() == "Renard") {
-                            echo '<img class="mouton" src="../img/objets/renard.png">';
+                            echo '<img class="mouton" src="../img/objets/renard' . $mouton->getImgid() . '.png">';
                         } else if ($mouton->getImgid() == null) {
                             echo '<img class="mouton" src="../img/stop.png">';
                         } else if ($mouton->getRace() == "Poissons") {
@@ -95,7 +95,7 @@
 
                         <form method="POST">
                             <input type="hidden" name="animal_id" value="<?php echo $mouton->getId(); ?>">
-                            <button type="submit" class="button purple" name="kill_button">KILL</button>
+                            <button type="submit" class="button purple" name="kill_button">Delete</button>
                         </form>
 
 
