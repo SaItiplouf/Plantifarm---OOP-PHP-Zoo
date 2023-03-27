@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../favicon/favicon.png">
   <?php
   $enclos = isset($_GET['enclos']) ? intval($_GET['enclos']) : null;
 
@@ -124,11 +125,11 @@
       // var_dump(round((time() - strtotime($data->getLastFoodUpdate())) / (60 * 60), 1));
       // var_dump(round((time() - strtotime($data->getLastFoodUpdate())) / (60 * 60), 1) * 20);
       // var_dump($data->getVie() + round((time() - strtotime($data->getLastFoodUpdate()))));
-
+    
       // echo '<br> ';
       // var_dump($data->getVie());
       // var_dump($data->getBouffe());
-
+    
       echo '
    <div class="animal animal' . $key . '" style="min-width: 5%; max-width: 12%; width:' . ($data->getTaille() * 0.3) . '%;">
     <div class="cartecontainer hidden">
@@ -149,7 +150,8 @@
         echo '<img class="moutons" src="../img/objets/poissons/poisson' . $data->getImgid() . '.png">';
       } else {
         echo '<p>Aucune image disponible pour cet enclos</p>';
-      };
+      }
+      ;
       echo ' </div>';
     }
     ?>
@@ -165,21 +167,21 @@
     <script>
       let animaux = document.querySelectorAll('.animal');
 
-      animaux.forEach(function(animal) {
+      animaux.forEach(function (animal) {
         let cartecontainer = animal.querySelector('.cartecontainer');
         let enfants = cartecontainer.querySelectorAll('p.carte');
 
-        animal.addEventListener('mouseover', function() {
+        animal.addEventListener('mouseover', function () {
           console.log("La souris est passée sur l'élément");
-          enfants.forEach(function(enfant) {
+          enfants.forEach(function (enfant) {
             enfant.classList.remove('hidden');
           });
           cartecontainer.classList.remove('hidden');
         });
 
-        animal.addEventListener('mouseout', function() {
+        animal.addEventListener('mouseout', function () {
           console.log("La souris a été retirée de l'élément");
-          enfants.forEach(function(enfant) {
+          enfants.forEach(function (enfant) {
             enfant.classList.add('hidden');
           });
           cartecontainer.classList.add('hidden');

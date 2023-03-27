@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon/favicon.png">
     <link rel="stylesheet" href="css/cimetiere.css">
     <title>Document</title>
 </head>
@@ -69,7 +70,8 @@
                 echo '<img class="moutons" src="../img/objets/poissons/poisson' . $data->getImgid() . '.png">';
             } else {
                 echo '<p>Aucune image disponible pour cet enclos</p>';
-            };
+            }
+            ;
             echo ' </div>';
         }
         ?>
@@ -77,21 +79,21 @@
         <script>
             let animaux = document.querySelectorAll('.animal');
 
-            animaux.forEach(function(animal) {
+            animaux.forEach(function (animal) {
                 let cartecontainer = animal.querySelector('.cartecontainer');
                 let enfants = cartecontainer.querySelectorAll('p.carte');
 
-                animal.addEventListener('mouseover', function() {
+                animal.addEventListener('mouseover', function () {
                     console.log("La souris est passée sur l'élément");
-                    enfants.forEach(function(enfant) {
+                    enfants.forEach(function (enfant) {
                         enfant.classList.remove('hidden');
                     });
                     cartecontainer.classList.remove('hidden');
                 });
 
-                animal.addEventListener('mouseout', function() {
+                animal.addEventListener('mouseout', function () {
                     console.log("La souris a été retirée de l'élément");
-                    enfants.forEach(function(enfant) {
+                    enfants.forEach(function (enfant) {
                         enfant.classList.add('hidden');
                     });
                     cartecontainer.classList.add('hidden');
@@ -104,7 +106,9 @@
     <div class="panneau-container">
         <img class="panneau" src="./img/panneau.png">
         <div class="textpanneau">
-            <p> Le cimetière contient <?php echo $enclos->getAnimals_amount(); ?> morts</p>
+            <p> Le cimetière contient
+                <?php echo $enclos->getAnimals_amount(); ?> morts
+            </p>
         </div>
     </div>
 
